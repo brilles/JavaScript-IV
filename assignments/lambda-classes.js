@@ -172,6 +172,7 @@ console.log(fred);
 console.log(fred.age);
 fred.demo("Python");
 fred.grade(bob, "Python 1");
+fred.speak();
 console.log("*************************************");
 console.log(michelle);
 console.log(michelle.age);
