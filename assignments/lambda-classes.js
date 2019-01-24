@@ -41,6 +41,7 @@ class Student extends Person {
     this.previousBackground = attributes3.previousBackground;
     this.className = attributes3.className;
     this.favSubjects = attributes3.favSubjects;
+    this.grade = attributes3.grade;
   }
   listsSubjects() {
     this.favSubjects.forEach(element => {
@@ -120,7 +121,8 @@ const taylor = new Student({
   gender: "female",
   previousBackground: "Chemical Engineering",
   className: "CS132",
-  favSubjects: ["Html", "CSS", "JavaScript"]
+  favSubjects: ["Html", "CSS", "JavaScript"],
+  grade: 100
 });
 const john = new Student({
   name: "John",
@@ -129,7 +131,8 @@ const john = new Student({
   gender: "male",
   previousBackground: "Mechanical Engineering",
   className: "CS13822",
-  favSubjects: ["C#", "C++", "JavaScript"]
+  favSubjects: ["C#", "C++", "JavaScript"],
+  grade: 83
 });
 
 // Project Manager objects
@@ -188,6 +191,8 @@ console.log(john.age);
 john.listsSubjects();
 john.PRAssignment("C++ 12");
 john.sprintChallenge("C 1");
+console.log(john.grade);
+console.log(taylor.grade);
 console.log("-------------------------------------");
 
 // Project Manager tests
